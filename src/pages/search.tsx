@@ -105,7 +105,8 @@ export default function Search() {
         return () => clearTimeout(timeout);
     }, [inp, select]);
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>
+    ) => {
         const value = e.target.value;
         setInp(value);
 
